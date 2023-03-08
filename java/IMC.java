@@ -14,7 +14,7 @@ public class IMC {
       char gender = escolhaGen.charAt(0);
      
         if(gender == sexo[0]){
-            Double altura = Double.valueOf(h);
+            Double altura = Double.valueOf(h); 
             var resultado = 72.7 * altura - 58;
             System.out.println(resultado);
         }

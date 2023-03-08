@@ -1,0 +1,76 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "IMC",
+            "request": "launch",
+            "mainClass": "IMC",
+            "projectName": "Repo.Dev-Java_27fe6c4c"
+        },
+        {
+            "type": "java",
+            "name": "logicaIf",
+            "request": "launch",
+            "mainClass": "logicaIf",
+            "projectName": "Repo.Dev-Java_27fe6c4c"
+        },
+        {
+            "type": "java",
+            "name": "matrizes",
+            "request": "launch",
+            "mainClass": "matrizes",
+            "projectName": "Repo.Dev-Java_27fe6c4c"
+        },
+        {
+            "type": "java",
+            "name": "menu",
+            "request": "launch",
+            "mainClass": "menu",
+            "projectName": "Repo.Dev-Java_27fe6c4c"
+        },
+        {
+            "type": "java",
+            "name": "receberTres",
+            "request": "launch",
+            "mainClass": "receberTres",
+            "projectName": "Repo.Dev-Java_27fe6c4c"
+        }
+    ]
+}

@@ -14,23 +14,8 @@ public class receberTres {
         int valor3 = Integer.parseInt(scan.nextLine());
         print("Quarto valor : ");
         var valor4 = Integer.parseInt(scan.nextLine());
- 
-        int[] vetor = { valor1, valor2, valor3, valor4 };
 
-        while (true) {
-            if (vetor[0] <= 10) {
-                System.out.print(vetor[0]++);
-            }
-            if (vetor[1] <= 10) {
-                System.out.print(vetor[1]++);
-            }
-            if (vetor[2] <= 10) {s
-                System.out.print(vetor[2]++);
-            }
-            if (vetor[3] >= 0) {
-                System.out.print((vetor[3]--));
-            }
-        }
+        int[] vetor = { valor1, valor2, valor3, valor4 };
 
     }
 

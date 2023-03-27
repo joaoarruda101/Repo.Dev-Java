@@ -5,6 +5,20 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "type": "java",
+            "name": "JogadorMain",
+            "request": "launch",
+            "mainClass": "JogadorMain",
+            "projectName": "Repo.Dev-Java_5d748012"
+        },
+        {
+            "type": "java",
+            "name": "receberTres",
+            "request": "launch",
+            "mainClass": "receberTres",
+            "projectName": "Repo.Dev-Java_5d748012"
+        },
+        {
             "name": "Java",
             "type": "java",
             "request": "launch",

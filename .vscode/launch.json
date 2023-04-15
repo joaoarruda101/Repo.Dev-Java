@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "matrizes",
+            "request": "launch",
+            "mainClass": "matrizes",
+            "projectName": "Repo.Dev-Java_5d748012"
+        },
+        {
+            "type": "java",
+            "name": "IMC",
+            "request": "launch",
+            "mainClass": "IMC",
+            "projectName": "Repo.Dev-Java_5d748012"
+        },
+        {
+            "type": "java",
             "name": "JogadorMain",
             "request": "launch",
             "mainClass": "JogadorMain",

@@ -14,10 +14,11 @@ public class index {
         System.out.println("4 - SUBTRAIR");
         System.out.println("Use > ");
         String esc = read.next();
+        read.close();
     }
 
 
     public static void Historico () {
-        
+            
     }
 }

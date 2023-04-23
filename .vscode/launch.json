@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Ordenacao",
+            "request": "launch",
+            "mainClass": "Projects.ordenandoVetor.Ordenacao",
+            "projectName": "Repo.Dev-Java_5d748012"
+        },
+        {
+            "type": "java",
+            "name": "menu",
+            "request": "launch",
+            "mainClass": "menu",
+            "projectName": "Repo.Dev-Java_5d748012"
+        },
+        {
+            "type": "java",
+            "name": "Calculadora",
+            "request": "launch",
+            "mainClass": "Projects.Calculadora.Calculadora",
+            "projectName": "Repo.Dev-Java_5d748012"
+        },
+        {
+            "type": "java",
             "name": "matrizes",
             "request": "launch",
             "mainClass": "matrizes",

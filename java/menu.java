@@ -1,11 +1,10 @@
-import java.util.Scanner;
+
 
 import javax.swing.JOptionPane;
 
 public class menu {
     public static void main(String[] args){
-        Scanner read = new Scanner(System.in);
-        
+
         double nota;
         nota = Double.parseDouble(JOptionPane.showInputDialog("Digite a nota"));
         if(nota >= 70){

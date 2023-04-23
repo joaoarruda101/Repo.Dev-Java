@@ -23,5 +23,6 @@ public class IMC {
             var resultado = 62.1 * altura - 44.7;
             System.out.println(resultado);
         }
+        scan.close();
     }
 }

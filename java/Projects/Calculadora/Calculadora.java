@@ -1,57 +1,81 @@
 package Projects.Calculadora;
 
+import java.util.ArrayList;
+import java.util.Scanner;
+
 public class Calculadora {
-    private String somar;
-    private String dividir;
-    private String multiplicar;
-    private String subtrair;
 
+    public static void main(String[] args) {
 
-    public Calculadora(String somar, String dividir, String multiplicar, String subtrair) {
-        this.somar = somar;
-        this.dividir = dividir;
-        this.multiplicar = multiplicar;
-        this.subtrair = subtrair;
+        Menu();
+        while (true) {
+
+            ArrayList<Double> listCalcSoma = new ArrayList<Double>();
+            ArrayList<Double> listCalcMultiplicar = new ArrayList<Double>();
+            Operacoes operacao = new Operacoes();
+            Scanner read = new Scanner(System.in);
+
+            System.out.print("Use > ");
+            int esc = read.nextInt();
+
+            if (esc == 1) {
+                System.out.println("!!! Escreva os números para SOMAR - (0) para resultado !!!");
+                for (int i = 0; i < Integer.MAX_VALUE; i++) {
+                    var resultado = read.nextDouble();
+                    listCalcSoma.add(resultado);
+                    if (resultado == 0) {
+                        System.out.flush();
+                        Menu();
+                        operacao.Somar(listCalcSoma);
+                        break;
+                    }
+                }
+            }
+            if (esc == 2) {
+                System.out.println("!!! Escreva os números para DIVIDIR !!!");
+                System.out.print("Dividendo > ");
+                var dividendo = read.nextInt();
+                System.out.print("Divisor > ");
+                var divisor = read.nextInt();
+                System.out.flush();
+                Menu();
+                operacao.Dividir(dividendo, divisor);
+            }
+            if (esc == 3) {
+                System.out.println("!!! Escreva os números para MULTIPLICAR - (0) para resultado !!!");
+                for (int i = 0; i < Integer.MAX_VALUE; i++) {
+                    var resultado = read.nextDouble();
+                    listCalcMultiplicar.add(resultado);
+                    if (listCalcMultiplicar.size() == 2) {
+                        System.out.flush();
+                        Menu();
+                        operacao.Multiplicar(listCalcMultiplicar);
+                        break;
+                    }
+
+                }
+            }
+            if (esc == 4) {
+                System.out.println("!!! Escreva os números para SUBTRAIR !!!");
+                System.out.print("Número Maior : ");
+                var numeroMaior = read.nextInt();
+                System.out.print("Número Menor : ");
+                var numeroMenor = read.nextInt();
+                System.out.flush();
+                Menu();
+                operacao.Subtrair(numeroMaior, numeroMenor);
+            }
+        }
     }
 
+    public static void Menu() {
+        System.out.println("===================** DESENVOLVEDOR João ( Victor ) F. Arruda **====================");
+        String[] options = { "SOMAR", "DIVIDIR", "MULTIPLICAR", "SUBTRAIR" };
 
-    public String getSomar() {
-        return somar;
+        for (int i = 1; i <= 4; i++) {
+            for (String item : options) {
+                System.out.println("[" + i++ + "]" + item);
+            }
+        }
     }
-
-
-    public void setSomar(String somar) {
-        this.somar = somar;
-    }
-
-
-    public String getDividir() {
-        return dividir;
-    }
-
-
-    public void setDividir(String dividir) {
-        this.dividir = dividir;
-    }
-
-
-    public String getMultiplicar() {
-        return multiplicar;
-    }
-
-
-    public void setMultiplicar(String multiplicar) {
-        this.multiplicar = multiplicar;
-    }
-
-
-    public String getSubtrair() {
-        return subtrair;
-    }
-
-
-    public void setSubtrair(String subtrair) {
-        this.subtrair = subtrair;
-    }
-
 }

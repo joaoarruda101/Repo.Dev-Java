@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "IMC",
+            "request": "launch",
+            "mainClass": "IMC",
+            "projectName": "Repo.Dev-Java_66873b40"
+        },
+        {
+            "type": "java",
             "name": "Ordenacao",
             "request": "launch",
             "mainClass": "Projects.ordenandoVetor.Ordenacao",

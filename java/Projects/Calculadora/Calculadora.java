@@ -21,7 +21,7 @@ public class Calculadora {
             if (esc == 1) {
                 System.out.println("!!! Escreva os números para SOMAR - (0) para resultado !!!");
                 for (int i = 0; i < Integer.MAX_VALUE; i++) {
-                    var resultado = read.nextDouble();
+                    double resultado = read.nextDouble();
                     listCalcSoma.add(resultado);
                     if (resultado == 0) {
                         System.out.flush();
@@ -34,9 +34,9 @@ public class Calculadora {
             if (esc == 2) {
                 System.out.println("!!! Escreva os números para DIVIDIR !!!");
                 System.out.print("Dividendo > ");
-                var dividendo = read.nextInt();
+                double dividendo = read.nextInt();
                 System.out.print("Divisor > ");
-                var divisor = read.nextInt();
+                double divisor = read.nextInt();
                 System.out.flush();
                 Menu();
                 operacao.Dividir(dividendo, divisor);
@@ -44,7 +44,7 @@ public class Calculadora {
             if (esc == 3) {
                 System.out.println("!!! Escreva os números para MULTIPLICAR - (0) para resultado !!!");
                 for (int i = 0; i < Integer.MAX_VALUE; i++) {
-                    var resultado = read.nextDouble();
+                    double resultado = read.nextDouble();
                     listCalcMultiplicar.add(resultado);
                     if (listCalcMultiplicar.size() == 2) {
                         System.out.flush();
@@ -58,9 +58,9 @@ public class Calculadora {
             if (esc == 4) {
                 System.out.println("!!! Escreva os números para SUBTRAIR !!!");
                 System.out.print("Número Maior : ");
-                var numeroMaior = read.nextInt();
+                double numeroMaior = read.nextInt();
                 System.out.print("Número Menor : ");
-                var numeroMenor = read.nextInt();
+                double numeroMenor = read.nextInt();
                 System.out.flush();
                 Menu();
                 operacao.Subtrair(numeroMaior, numeroMenor);

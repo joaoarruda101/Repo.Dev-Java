@@ -17,14 +17,14 @@ public class Operacoes {
     }
 
     public  void Multiplicar(ArrayList<Double> listaNumeros){
-        int multiplo = 1;
+        double multiplo = 1;
         for (int i = 0; i < listaNumeros.size(); i++) {
             multiplo *= listaNumeros.get(i);
         }
         System.out.println("MULTIPLO = " + multiplo);
     }
 
-    public void Subtrair(int numeroMaior, int numeroMenor){
+    public void Subtrair(double numeroMaior, double numeroMenor){
         System.out.println("SUBTRAÇÃO = " + (numeroMaior - numeroMenor));
     }
 }

@@ -15,12 +15,13 @@ public class IMC {
      
         if(gender == sexo[0]){
             Double altura = Double.valueOf(h); 
-            var resultado = 72.7 * altura - 58;
+            Double resultado = 72.7 * altura - 58;
             System.out.println(resultado);
         }
         if(gender == sexo[1]){
             Double altura = Double.valueOf(h);
-            var resultado = 62.1 * altura - 44.7;
+            Double resultado = 72.7 * altura - 58;
+            resultado = 62.1 * altura - 44.7;
             System.out.println(resultado);
         }
         scan.close();

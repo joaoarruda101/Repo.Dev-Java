@@ -10,7 +10,7 @@ public class matrizes {
         option = new String[3];
         menu(option);
         System.out.print("R:");
-        var esc = read.nextLine();
+        String esc = read.nextLine();
         if(esc != "1"){
             insertParametersMatriz();
         }else{
